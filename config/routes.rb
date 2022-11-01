@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :friends
  # change this with 'home#index' to mahe index page a root page get 'home/index'
   root 'home#index'
   get 'home/about'
