@@ -37,7 +37,10 @@
 <input type="text" class="form-control"  <%= form.text_field :twitter %>
 </div>
 
-  
+<div class="mb-3">
+<%= form.number_field :user_id, id: :friend_user_id, class:"form-control", value:current_user.id, type: :hidden %>
+</div>
+
 
   <div>
     <%= form.submit class:"btn btn-info"  %>
